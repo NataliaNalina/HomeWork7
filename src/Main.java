@@ -8,10 +8,10 @@ public class Main {
         int countMonth = 0;
         while (totalSumPr < 2459000) {
             countMonth = countMonth + 1;
-            totalSumPr += 29000;
+            totalSumPr += 15000;
             totalSumPr += totalSumPr * 0.01;
+            System.out.println("Месяц " + countMonth + ", сумма накоплений равна " + (int) totalSumPr + " рублей.");
         }
-        System.out.println("Месяц " + countMonth + ", сумма накоплений равна " + totalSumPr + " рублей.");
         System.out.println("Задача 2. ");
         int i = 0;
         while (i < 10) {
@@ -35,17 +35,16 @@ public class Main {
         while (totalSum < 12000000) {
             countMonth += 1;
             totalSum += totalSum * 0.07;
-            System.out.println("Месяц " + countMonth + ", сумма накоплений равна " + totalSum + " рублей.");
+            System.out.println("Месяц " + countMonth + ", сумма накоплений равна " + (int) totalSum + " рублей.");
         }
-        System.out.println("Итого потребуется " + countMonth + " месяцев");
-        System.out.println("Задача 5. ");
+       System.out.println("Задача 5. ");
         totalSum = 15000;
         countMonth = 0;
         while (totalSum < 12000000) {
             countMonth += 1;
             totalSum += totalSum * 0.07;
             if (countMonth % 6 == 0) {
-                System.out.println("Месяц " + countMonth + ", сумма накоплений равна " + totalSum + " рублей.");
+                System.out.println("Месяц " + countMonth + ", сумма накоплений равна " + (int) totalSum + " рублей.");
             }
         }
         System.out.println("Задача 6. ");
@@ -56,7 +55,7 @@ public class Main {
             countMonth += 1;
             totalSum += totalSum * 0.07;
             if (countMonth % 6 == 0) {
-                System.out.println("Месяц " + countMonth + ", сумма накоплений равна " + totalSum + " рублей.");
+                System.out.println("Месяц " + countMonth + ", сумма накоплений равна " + (int) totalSum + " рублей.");
             }
         }
         System.out.println("Задача 7. ");
